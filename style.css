@@ -410,119 +410,298 @@ html,body{
   .reel{ animation:none !important; }
 }
 
-/* ===========================
-   MOBILE RESPONSIVE
-   =========================== */
+/* Mobile Responsive Improvements */
 
-@media (max-width:768px){
-
-  html,body{
-    padding:20px 10px;
+/* Tablets and larger phones (768px+) */
+@media (max-width: 768px) {
+  html, body {
+    padding: 20px 12px;
   }
-
-  .scene{
-    max-width:100%;
-    gap:16px;
+  
+  .scene {
+    gap: 16px;
   }
-
-  .cassette{
-    width:100%;
-    padding:12px;
+  
+  .cassette {
+    aspect-ratio: 170/108;
+    padding: 12px;
+    gap: 8px;
   }
-
-  .deck{
-    padding:12px;
+  
+  .label-window {
+    padding: 7px 10px 5px;
+    min-height: 34px;
+    gap: 8px;
   }
-
-  .playlist{
-    width:100%;
+  
+  .side-tag {
+    font-size: 8px;
+    letter-spacing: 0.1em;
   }
-
-  .playlist-items{
-    max-height:180px;
+  
+  .track-name {
+    font-size: 12px;
   }
-
-  .transport{
-    gap:8px;
+  
+  .counter {
+    font-size: 11px;
+    padding: 2px 5px;
   }
-
-  .btn{
-    width:60px;
-    height:48px;
-    font-size:18px;
+  
+  .reel {
+    width: 56px;
+    height: 56px;
   }
-
-  .btn.primary{
-    width:70px;
+  
+  .reel.left .tape-coil { 
+    width: 46px; 
+    height: 46px; 
   }
-
-  .progress-track{
-    height:6px;
+  
+  .hub {
+    width: 18px;
+    height: 18px;
   }
-
-  .track-name{
-    font-size:13px;
+  
+  .vu-row {
+    height: 16px;
+    padding: 0 2px;
   }
-
-  .counter{
-    font-size:12px;
+  
+  .deck {
+    padding: 12px 14px;
+    gap: 12px;
   }
-
-  .volume{
-    width:100%;
-    justify-content:center;
+  
+  .btn {
+    width: 48px;
+    height: 38px;
+    font-size: 14px;
   }
-
-  .volume input[type=range]{
-    width:140px;
+  
+  .volume input[type=range] {
+    width: 70px;
   }
-
+  
+  .volume label {
+    font-size: 9px;
+  }
+  
+  .playlist-items {
+    max-height: 200px;
+    padding: 0 6px 6px;
+  }
+  
+  .playlist-item {
+    padding: 7px 8px;
+    font-size: 11px;
+    gap: 8px;
+  }
+  
+  .playlist-item .num {
+    width: 20px;
+  }
+  
+  .hint {
+    font-size: 9.5px;
+    max-width: 320px;
+  }
 }
 
-@media (max-width:480px){
-
-  html,body{
-    padding:12px 8px;
+/* Small phones (480px and below) */
+@media (max-width: 480px) {
+  html, body {
+    padding: 16px 10px;
   }
-
-  .scene{
-    gap:12px;
+  
+  .scene {
+    gap: 14px;
   }
-
-  .kicker{
-    font-size:10px;
+  
+  .kicker {
+    font-size: 9px;
+    letter-spacing: 0.25em;
   }
-
-  .track-name{
-    font-size:12px;
+  
+  .title {
+    font-size: 13px;
   }
-
-  .side-tag,
-  #trackIndex{
-    font-size:8px;
+  
+  .cassette {
+    padding: 10px;
+    gap: 6px;
   }
-
-  .counter{
-    font-size:11px;
-    padding:2px 6px;
+  
+  .label-window {
+    padding: 6px 8px 4px;
+    min-height: 30px;
+    gap: 6px;
+    flex-wrap: wrap;
   }
-
-  .btn{
-    width:52px;
-    height:44px;
-    font-size:16px;
+  
+  .side-tag {
+    font-size: 7px;
   }
-
-  .btn.primary{
-    width:60px;
+  
+  .track-name {
+    font-size: 11px;
   }
-
-  .volume input[type=range]{
-    width:110px;
+  
+  .counter {
+    font-size: 10px;
+    padding: 2px 4px;
   }
-
-  .playlist-items{
-    max-height:150px;
+  
+  .reel {
+    width: 48px;
+    height: 48px;
   }
+  
+  .reel.left .tape-coil { 
+    width: 40px; 
+    height: 40px; 
+  }
+  
+  .hub {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .vu-row {
+    height: 14px;
+    gap: 2px;
+  }
+  
+  .tape-strip {
+    height: 12px;
+  }
+  
+  .bottom-vents {
+    padding: 0 20%;
+    gap: 2px;
+  }
+  
+  .bottom-vents span {
+    height: 2px;
+  }
+  
+  .deck {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+  
+  .progress-track {
+    height: 3px;
+  }
+  
+  .transport {
+    gap: 6px;
+  }
+  
+  .btn {
+    width: 42px;
+    height: 34px;
+    font-size: 12px;
+    box-shadow: 0 2px 0 #0e0c0a, 0 3px 8px rgba(0,0,0,0.5);
+  }
+  
+  .btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 0 0 #0e0c0a, 0 1px 3px rgba(0,0,0,0.5);
+  }
+  
+  .lower-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .volume {
+    gap: 6px;
+  }
+  
+  .volume label {
+    font-size: 8px;
+  }
+  
+  .volume input[type=range] {
+    width: 60px;
+    height: 2px;
+  }
+  
+  .playlist {
+    max-width: 100%;
+  }
+  
+  .playlist-head {
+    font-size: 9px;
+    padding: 10px 12px 6px;
+  }
+  
+  .playlist-items {
+    max-height: 160px;
+    padding: 0 4px 4px;
+  }
+  
+  .playlist-item {
+    padding: 6px 6px;
+    font-size: 10px;
+    gap: 6px;
+  }
+  
+  .playlist-item .num {
+    width: 18px;
+    font-size: 9px;
+  }
+  
+  .playlist-item .note {
+    font-size: 11px;
+  }
+  
+  .hint {
+    font-size: 8.5px;
+    max-width: 280px;
+    line-height: 1.4;
+  }
+  
+  .hint code {
+    padding: 1px 3px;
+  }
+  
+  .screw {
+    width: 7px;
+    height: 7px;
+  }
+  
+  .screw::after {
+    width: 4px;
+    height: 1px;
+  }
+}
 
+/* Extra small phones (under 350px) */
+@media (max-width: 350px) {
+  .cassette {
+    aspect-ratio: 160/110;
+  }
+  
+  .btn {
+    width: 38px;
+    height: 30px;
+    font-size: 11px;
+  }
+  
+  .reel {
+    width: 42px;
+    height: 42px;
+  }
+  
+  .reel.left .tape-coil { 
+    width: 34px; 
+    height: 34px; 
+  }
+  
+  .playlist-items {
+    max-height: 140px;
+  }
 }
