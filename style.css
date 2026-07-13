@@ -409,3 +409,120 @@ html,body{
 @media (prefers-reduced-motion: reduce){
   .reel{ animation:none !important; }
 }
+
+/* ===========================
+   MOBILE RESPONSIVE
+   =========================== */
+
+@media (max-width:768px){
+
+  html,body{
+    padding:20px 10px;
+  }
+
+  .scene{
+    max-width:100%;
+    gap:16px;
+  }
+
+  .cassette{
+    width:100%;
+    padding:12px;
+  }
+
+  .deck{
+    padding:12px;
+  }
+
+  .playlist{
+    width:100%;
+  }
+
+  .playlist-items{
+    max-height:180px;
+  }
+
+  .transport{
+    gap:8px;
+  }
+
+  .btn{
+    width:60px;
+    height:48px;
+    font-size:18px;
+  }
+
+  .btn.primary{
+    width:70px;
+  }
+
+  .progress-track{
+    height:6px;
+  }
+
+  .track-name{
+    font-size:13px;
+  }
+
+  .counter{
+    font-size:12px;
+  }
+
+  .volume{
+    width:100%;
+    justify-content:center;
+  }
+
+  .volume input[type=range]{
+    width:140px;
+  }
+
+}
+
+@media (max-width:480px){
+
+  html,body{
+    padding:12px 8px;
+  }
+
+  .scene{
+    gap:12px;
+  }
+
+  .kicker{
+    font-size:10px;
+  }
+
+  .track-name{
+    font-size:12px;
+  }
+
+  .side-tag,
+  #trackIndex{
+    font-size:8px;
+  }
+
+  .counter{
+    font-size:11px;
+    padding:2px 6px;
+  }
+
+  .btn{
+    width:52px;
+    height:44px;
+    font-size:16px;
+  }
+
+  .btn.primary{
+    width:60px;
+  }
+
+  .volume input[type=range]{
+    width:110px;
+  }
+
+  .playlist-items{
+    max-height:150px;
+  }
+
+}
