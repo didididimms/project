@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIXTAPE No. 29</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scene">
+  <div class="kicker" id="sideTag">— side a —</div>
+  <div class="title"></div>
+
+  <div class="cassette">
+    <div class="screw tl"></div>
+    <div class="screw tr"></div>
+    <div class="screw bl"></div>
+    <div class="screw br"></div>
+
+    <div class="label-window">
+      <div class="label-lines">
+        <div class="side-tag" id="trackIndex">TRACK 01/16</div>
+        <div class="track-name" id="trackName">— memuat —</div>
+      </div>
+      <div class="counter" id="counter">00:00</div>
+    </div>
+
+    <div class="reel-window">
+      <div class="reel left" id="reelLeft">
+        <div class="tape-coil"></div>
+        <div class="hub"></div>
+      </div>
+      <div class="tape-strip"></div>
+      <div class="reel right" id="reelRight">
+        <div class="tape-coil"></div>
+        <div class="hub"></div>
+      </div>
+    </div>
+
+    <div class="vu-row" id="vuRow"></div>
+    <div class="bottom-vents"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  </div>
+
+  <div class="deck">
+    <div class="progress-track" id="progressTrack"><div class="progress-fill" id="progressFill"></div></div>
+
+    <div class="transport">
+      <button class="btn" id="btnPrev" title="Track sebelumnya">◁◁</button>
+      <button class="btn primary" id="btnPlay" title="Play / Pause">▶</button>
+      <button class="btn" id="btnStop" title="Stop">◼</button>
+      <button class="btn" id="btnNext" title="Track berikutnya">▷▷</button>
+    </div>
+
+    <div class="lower-row">
+      <div class="volume">
+        <label>VOL</label>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.8">
+      </div>
+    </div>
+  </div>
+
+  <div class="playlist" id="playlist">
+    <div class="playlist-head">daftar lagu</div>
+    <div class="playlist-items" id="playlistItems"></div>
+  </div>
+
+  <div class="hint">hope you like it, semangat menjalani hidup after SMA!! doa terbaik dariku untuk dirimu </div>
+</div>
+
+<audio id="audio" preload="metadata"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
